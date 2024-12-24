@@ -93,3 +93,18 @@ function toCiao() {
         console.log('Error playing audio:', error);
     });
 }
+
+function toAll() {
+    var bgAudio = document.getElementById("bgAudio");
+    document.getElementById("letterModal").style.display = "block";
+    document.getElementById("myModal").style.display = "none";
+    var letterContent = document.getElementById("letter-content");  // Get the <p> element
+    bgAudio.pause();
+    // Assign a message to the <p> element's textContent
+    letterContent.textContent = 'Halluuu sa iyo, I just wanna say salamat sa pag-eexist, palagi kang mag-iingat and you are always appreciated. Andito lang ako kung may pera ka HAHAHAHAH jk, I will pray for your success bossing and salamat sa pag-accept sa akin kahit na isa akong kupal HSHASHAHSHAHS ayun lang. Happy holiday sa inyo ng family moo Dōmo arigatō';
+
+    var audio = document.getElementById("myAudio");  // Replace "myAudio" with the ID of your <audio> element
+    audio.play().catch(error => {
+        console.log('Error playing audio:', error);
+    });
+}
